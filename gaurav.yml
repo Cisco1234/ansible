@@ -10,4 +10,5 @@
   - name: ensure apache is at the latest version
     yum:
       name: httpd
+      enablerepo: epel    
       state: present
