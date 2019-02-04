@@ -1,17 +1,10 @@
 ---
-- hosts: all
-  remote_user: gaurav
-  ansible_pass : Cisco123456$
-  ansible_become: yes
-  ansible_become_method: sudo
-  ansible_become_user: root
-  ansible_become_pass: Cisco123456$
-  
+- hosts: all  
   
 
   tasks:
   - name: ensure apache is at the latest version
     yum:
       name: httpd
-      enablerepo: epel    
+      #enablerepo: epel    
       state: present
