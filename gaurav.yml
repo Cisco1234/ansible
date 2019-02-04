@@ -1,6 +1,6 @@
 ---
 - hosts: all
-  ansible_user: gaurav
+  remote_user: gaurav
   ansible_pass : Cisco123456$
   ansible_become: yes
   ansible_become_method: sudo
