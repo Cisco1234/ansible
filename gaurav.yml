@@ -2,7 +2,7 @@
 - hosts: all
   ansible_user: gaurav
   ansible_become: yes
-  ansible_become_method: su
+  ansible_become_method: sudo
   ansible_become_user: root
   
 
